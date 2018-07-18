@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="choose_city">Choose City</string>
+    <string name="for_today">Today Weather</string>
+    <string name="weather_in_city_today">Weather for today</string>
+    <string name="pressure_value">Pressure\n111</string>
+    <string name="wind_value">Wind spd.\n10м/с</string>
+    <string name="humidity_value">Humidity\n12123</string>
+    <string name="waiting_for_gps">Waiting for GPS</string>
+    <string name="icon_url">https://yastatic.net/weather/i/icons/blueye/color/svg/%s.svg</string>
+    <string name="select_city_in_en">Select City in EN</string>
+</resources>

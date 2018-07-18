@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/tvPlace"
+        style="@style/AppTextView.Weather.Place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/weather_in_city_today" />
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/tvPlace"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/tvTemperature"
+        style="@style/AppTextView.Weather.Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivIcon"
+        android:layout_centerHorizontal="true"
+        android:text="+29.0" />
+
+
+    <TextView
+        android:id="@+id/tvDescription"
+        style="@style/AppTextView.Weather.Value.Other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/tvTemperature"
+        android:layout_centerHorizontal="true"
+        android:text="Пасмурно, небольшой дождь" />
+
+    <TextView
+        android:id="@+id/tvPressure"
+        style="@style/AppTextView.Weather.Value.Other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:text="@string/pressure_value" />
+
+    <TextView
+        android:id="@+id/tvWind"
+        style="@style/AppTextView.Weather.Value.Other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDescription"
+        android:layout_marginTop="6dp"
+        android:layout_toLeftOf="@id/tvPressure"
+        android:gravity="center"
+        android:text="@string/wind_value" />
+
+    <TextView
+        android:id="@+id/tvHumidity"
+        style="@style/AppTextView.Weather.Value.Other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDescription"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/tvPressure"
+        android:gravity="center"
+        android:text="@string/humidity_value" />
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_below="@+id/tvHumidity"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvDate"
+        style="@style/AppTextView.Weather.Value.Other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="4 июля"
+        android:textAllCaps="true" />
+
+    <TextView
+        android:id="@+id/tvTemperatureDay"
+        style="@style/AppTextView.Weather.Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDate"
+        android:layout_marginLeft="16dp"
+        android:text="+24 - +28" />
+
+    <TextView
+        android:id="@+id/tvTemperatureNight"
+        style="@style/AppTextView.Weather.Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTemperatureDay"
+        android:layout_marginLeft="16dp"
+        android:text="+24 - +28" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        style="@style/AppTextView.Weather.Value.Other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTemperatureNight"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Пасмурно, небольшой дождь" />
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_below="@id/tvDescription"/>
+
+
+</RelativeLayout>
